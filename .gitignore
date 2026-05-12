@@ -1,0 +1,38 @@
+# 依存関係
+node_modules/
+
+# ビルド成果物
+dist/
+dev-dist/
+.output/
+
+# ローカル設定
+.env
+.env.local
+.env.*.local
+
+# Claude Code ローカル設定
+.claude/settings.local.json
+
+# キャッシュ
+.cache/
+.vite/
+*.tsbuildinfo
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ログ
+*.log
+
+# フォント
+*.otf
+*.ttf
+*.woff2

@@ -1,0 +1,23 @@
+{
+"permissions": {
+	"allow": [
+		"Bash(grep *)",
+		"Bash(find *)",
+		"Bash(sed *)",
+		"Bash(bunx *)"
+	],
+	"deny": [
+		"Bash(rm *)",
+		"Bash(rmdir *)",
+		"Bash(curl *)",
+		"Bash(wget *)",
+		"Bash(git push *)",
+		"Bash(git push)",
+		"Bash(git reset --hard *)",
+		"Bash(git reset --hard)",
+		"Bash(git rebase *)",
+		"Bash(sudo *)",
+		"Bash(su *)"
+		]
+	}
+}
