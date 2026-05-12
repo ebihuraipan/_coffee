@@ -1,0 +1,11 @@
+# ビルド成果物
+dist/
+build/
+
+# 機密情報
+.env
+secrets/
+
+# 大きなファイル
+*.log
+node_modules/
