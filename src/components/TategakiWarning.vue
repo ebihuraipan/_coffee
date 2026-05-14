@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 export default
-	name: 'TategakiWarning'
+	name: 'DialogWarning'
 	props:
 		isShow:
 			type: Boolean

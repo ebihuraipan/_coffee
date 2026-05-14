@@ -3,11 +3,13 @@ import { ref, onMounted, nextTick, computed } from 'vue'
 import miseData from '../data/miseData.json'
 import TategakiLine from './TategakiLine.vue'
 import TategakiWarning from './TategakiWarning.vue'
+import DWarning from './dialog/Warning.vue'
+import DTechnology from './dialog/Technology.vue'
 import { GROUP_ORDER } from '../utils/constants.coffee'
 
 export default
 	name: 'TategakiView'
-	components: { TategakiLine, TategakiWarning }
+	components: { TategakiLine, DWarning, DTechnology }
 	setup: ->
 		scrollRef = ref null
 		onMounted ->
@@ -31,10 +33,14 @@ export default
 	<b class="font_kouzan fs50">
 		福岡喫茶めぐり
 	</b>
+
+	<!-- <DTechnology /> -->
 	<br><br>
 	<div>
 		<div class="mt30 h80">
-			<TategakiWarning :isShow="false" />
+			<DWarning />
+			<DTechnology />
+			<!-- <TategakiWarning :isShow="false" /> -->
 		</div>
 	</div>
 	<br>

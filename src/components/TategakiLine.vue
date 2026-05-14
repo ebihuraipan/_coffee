@@ -102,9 +102,7 @@ export default
 							住所コピー
 						</div>
 					</div>
-					
 				</div>
-
 			</div>
 		</Transition>
 	</div>
