@@ -78,16 +78,6 @@ export default
 						<TategakiDayFlag :yasumi="mdata.yasumi" />
 					</div>
 				</div>
-				
-				<!-- 店休日 -->
-				<div class="col p10">
-					<div>
-						<span class="mt10">備考</span>
-					</div>
-					<div class="mt30">
-						<pre class="font_normal">{{ mdata.bikou }}</pre>
-					</div>
-				</div>
 
 				<!-- コピー -->
 				<div class="col p10">
@@ -103,6 +93,17 @@ export default
 						</div>
 					</div>
 				</div>
+				
+				<!-- 備考 -->
+				<div class="col p10">
+					<div>
+						<span class="mt10">備考</span>
+					</div>
+					<div class="mt30">
+						<pre class="font_normal">{{ mdata.bikou }}</pre>
+					</div>
+				</div>
+
 			</div>
 		</Transition>
 	</div>
@@ -119,8 +120,8 @@ export default
 	height: 90vh;
 	margin-top: 5vh;	
 	background-color: rgba(235, 102, 30, 0.1);
-	mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-	-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+	/* mask-image: linear-gradient(to bottom, black 50%, transparent 100%); */
+	/* -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%); */
 }
 
 .hurigana{
