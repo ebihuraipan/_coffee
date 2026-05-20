@@ -1,15 +1,14 @@
 <script lang="coffee">
 import { ref, onMounted, nextTick, computed } from 'vue'
 import miseData from '../data/miseData.json'
-import TategakiLine from './TategakiLine.vue'
-import TategakiWarning from './TategakiWarning.vue'
+import Cafe from './Cafe.vue'
 import DWarning from './dialog/Warning.vue'
 import DTechnology from './dialog/Technology.vue'
 import { GROUP_ORDER } from '../utils/constants.coffee'
 
 export default
 	name: 'TategakiView'
-	components: { TategakiLine, DWarning, DTechnology }
+	components: { Cafe, DWarning, DTechnology }
 	setup: ->
 		scrollRef = ref null
 		onMounted ->
@@ -31,7 +30,7 @@ export default
 <template>
 <div id="tategaki_scroll">
 	<b class="font_kouzan fs50">
-		福岡喫茶めぐり
+		福岡喫茶参照
 	</b>
 
 	<!-- <DTechnology /> -->
@@ -40,14 +39,13 @@ export default
 		<div class="mt30 h80">
 			<DWarning />
 			<DTechnology />
-			<!-- <TategakiWarning :isShow="false" /> -->
 		</div>
 	</div>
 	<br>
 	<template v-for="( mdata, i ) of sortedMise" :key="i">
 		<template v-if="mdata.isShow">
-			<div style="padding:10px;">
-				<TategakiLine :mdata="mdata" :isShow="false" />
+			<div class="p10">
+				<Cafe :mdata="mdata" :isShow="false" />
 			</div>
 		</template>
 	</template>
@@ -56,7 +54,7 @@ export default
 
 <style scoped>
 #tategaki_scroll {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	padding: 0;
 	touch-action: pan-x;

@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 export default
-	name: 'TategakiWarning'
+	name: 'Warning'
 	setup: ->
 		dialogRef = ref null
 		openDialog = -> dialogRef.value?.showModal()
@@ -25,11 +25,11 @@ export default
 				<li>
 					あくまで【珈琲が美味しいお店】であって<br>
 					【一般的に素敵なお店】ではありません。<br>
-					個性が強すぎ、メニューが珈琲しかない、など<br>
-					万人受けしないお店もあります<br>
+					個性が強すぎ、メニューが珈琲しかない、<br>
+					など万人受けしないお店もあります<br>
 				</li>
 				<li>
-					常に数年前に行ってる所もあるので<br>
+					数年前に行ってる所もあるので<br>
 					最新情報を確認してください。<br>
 					カフェのサイクルはとても早く、<br>
 					閉店してるかもしれません…<br>

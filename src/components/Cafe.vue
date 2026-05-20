@@ -1,10 +1,10 @@
 <script lang="coffee">
 import { ref } from 'vue'
-import TategakiDayFlag from './TategakiDayFlag.vue'
+import ClosingDate from './ClosingDate.vue'
 
 export default
-	name: 'TategakiLine'
-	components: { TategakiDayFlag }
+	name: 'Cafe'
+	components: { ClosingDate }
 	props:
 		mdata:
 			type: Object
@@ -75,7 +75,7 @@ export default
 						<span class="mt10">店休日</span>
 					</div>
 					<div class="mt30">
-						<TategakiDayFlag :yasumi="mdata.yasumi" />
+						<ClosingDate :yasumi="mdata.yasumi" />
 					</div>
 				</div>
 
@@ -103,7 +103,6 @@ export default
 						<pre class="font_normal">{{ mdata.bikou }}</pre>
 					</div>
 				</div>
-
 			</div>
 		</Transition>
 	</div>

@@ -15,7 +15,7 @@ import {
 } from '../utils/date.coffee'
 
 export default
-	name: 'TategakiDayFlag'
+	name: 'ClosingDate'
 	props:
 		yasumi:
 			type: Object

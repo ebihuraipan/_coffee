@@ -27,7 +27,8 @@ const coffeePlugin: Plugin = {
 
 export default defineConfig({
   test: {
-    include: ['test/**/*.test.coffee']
+    include: ['test/**/*.test.coffee'],
+    environment: 'happy-dom'
   },
   plugins: [
     coffeePlugin,

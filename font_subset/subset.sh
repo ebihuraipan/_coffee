@@ -15,7 +15,6 @@ cat "$SCRIPT_DIR/../src/components/dialog/Warning.vue" >> "$TMP_FILE"
 cat "$SCRIPT_DIR/../src/components/TategakiDayFlag.vue" >> "$TMP_FILE"
 cat "$SCRIPT_DIR/../src/components/TategakiLine.vue" >> "$TMP_FILE"
 cat "$SCRIPT_DIR/../src/components/TategakiView.vue" >> "$TMP_FILE"
-cat "$SCRIPT_DIR/../src/components/TategakiWarning.vue" >> "$TMP_FILE"
 echo "テキスト抽出完了: $TMP_FILE"
 
 pyftsubset "$SRC_FONT" \
